@@ -13,24 +13,22 @@
 # limitations under the License.
 
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
-$(call inherit-product, vendor/fluid/config/common_full_phone.mk)
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := fluid_miatoll
+PRODUCT_NAME := evolution_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6250
 PRODUCT_MANUFACTURER := Xiaomi
-
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
-IS_PHONE := true
-TARGET_INCLUDE_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-DISABLE_DEFAULT_CAMERA := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-FLUID_BUILD_TYPE := OFFICIAL
-PRODUCT_PRODUCT_PROPERTIES += \
-  ro.fluid.maintainer=Ramisky \
-  ro.fluid.cpu=SDM720G
+
+# Inherit Some Evo Stuff
+EVO_BUILD_TYPE := OFFICIAL
+WITH_GAPPS := true
+EVO_BUILD_TYPE := OFFICIAL
+# Maintainer props
+EVO_MAINTAINER := Agmad
+EVO_SUPPORT_URL := https://t.me/EvolutionXMiatoll
