@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/descendant_miatoll.mk
+    $(LOCAL_DIR)/spark_miatoll.mk
 
 COMMON_LUNCH_CHOICES := \
-    descendant_miatoll-userdebug \
+    spark_miatoll-userdebug \
 
