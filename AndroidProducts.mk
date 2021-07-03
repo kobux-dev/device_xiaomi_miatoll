@@ -9,4 +9,4 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     spark_miatoll-userdebug \
-
+    spark_miatoll-user \
